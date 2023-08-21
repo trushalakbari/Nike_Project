@@ -1,0 +1,29 @@
+const fs = require("fs")
+
+// <==============================================async function ========================================>
+
+fs.readdir("./files", (err, data) => {
+    console.log(err);
+    console.log(data);
+})
+
+console.log("trushal");
+
+
+// output async function
+
+// trushal first
+// err and data end
+
+
+// <==============================================sync function ========================================>
+
+let fs = fs.readdirsync("./files")
+files = fs
+
+console.log(files);
+
+
+// sync function =
+// clg trushal end
+// clg err and data first
